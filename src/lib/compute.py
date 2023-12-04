@@ -1,4 +1,4 @@
-# Exercise 3: Adding Files to the Index
+# Exercise 4: Reversing Changes
 
 class Compute:
     def __init__(self, operator, operands):
@@ -9,18 +9,13 @@ class Compute:
         pass
 
     def subtract(self):
-        difference = 0
-        for item in self.operands:
-            difference -= item
-        print(difference)
-
-    def divide(self):
         pass
 
-    def multiply(self):
-        if self.operands is None:
-            return
-        product = 1
+    def divide(self):
+        quotient = 1
         for item in self.operands:
-            product *= item
-        print(product)
+            quotient = item
+        print(quotient)
+
+    def multiply(self):
+        pass
